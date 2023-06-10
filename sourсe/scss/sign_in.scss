@@ -1,0 +1,123 @@
+@import 'light_components';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 988px;
+}
+
+.wrapper__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 368px;
+  min-width: 394px;
+  box-sizing: border-box;
+  border: 1px solid $black;
+}
+
+.container__enter-logo {
+  margin-bottom: 23px;
+}
+
+.enter-logo {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.495em;
+  color: $grey;
+}
+
+.container__enter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.enter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.enter-form__field input {
+  margin-bottom: 19px;
+  text-align: center;
+  @include narrow-form-field($dark-grey);
+}
+
+.enter-form__field input:hover {
+  border: 1px solid $soft-grey;
+}
+
+.enter-form__field input:focus {
+  border: 1px solid $sky-blue;
+}
+
+.enter-form__field input:focus {
+  border: 1px solid $bright-pink;
+}
+
+.enter-form__field input::placeholder {
+  color: $dark-grey;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.enter-form__button button{
+  @include middle-dark-gray-button;
+  margin-top: 30px - 19px;
+}
+
+.enter-form__button button:hover{
+  background-color: $soft-grey;
+}
+
+.enter-form__button button:focus{
+  background-color: $soft-blue;
+  border: 1px solid $black;
+  color: $black;
+}
+
+.enter-form__button button:active{
+  background-color: $soft-pink;
+  border: 1px solid $black;
+  color: $black;
+}
+
+.container__sign-up-link {
+  align-self: flex-end;
+  margin-bottom: 26px;
+  margin-right: 38px;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: $dark-grey;
+}
+
+.sign-up-link:hover {
+  color: $soft-grey;
+}
+
+.sign-up-link:focus {
+  color: $sky-blue;
+}
+
+.sign-up-link:active {
+  color: $bright-pink;
+}
+

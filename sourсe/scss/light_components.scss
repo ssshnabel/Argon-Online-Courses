@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap');
+
+$soft-green: #DEFE99;
+$soft-pink: #FFD1F5;
+$grey: #969696;
+$black: #000000;
+$white: #FFFFFF;
+$sky-blue: #89DFFA;
+$bright-pink:  #FF52E3;
+$pink: #FFA6F1;
+$soft-blue: #B7FBFF;
+$soft-grey: #D3CFCF;
+$dark-grey: #242424;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Assistant', sans-serif;
+}
+
+@mixin short-dark-gray-button {
+  background-color: $dark-grey;
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 21px;
+  border-radius: 7px;
+  border: none;
+}
+
+@mixin middle-dark-gray-button {
+  background-color: $dark-grey;
+  color: $white;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 44px;
+  border-radius: 7px;
+  border: none;
+  line-height: 21px;
+  letter-spacing: 0.9px;
+  font-style: normal;
+}
+
+@mixin long-dark-gray-button {
+  background-color: $dark-grey;
+  color: $white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 126px;
+  border-radius: 7px;
+  border: none;
+}
+
+@mixin black-stroke-button($padding-vertical, $padding-horizont) {
+  background-color: $dark-grey;
+  border: 2px solid $black;
+  border-radius: 7px;
+  color: $black;
+  font-weight: 400;
+  font-size: 24px;
+  padding: $padding-vertical, $padding-horizont;
+}
+
+@mixin grey-button {
+  background-color: $white;
+  border: 2px solid $grey;
+  border-radius: 7px;
+  color: $grey;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 11px 28px;
+}
+
+@mixin narrow-form-field($stroke-color) {
+  border: 1px solid $stroke-color;
+  border-radius: 7px;
+  background-color: $white;
+  width: 319px;
+  height: 41px;
+}
+ 
+
+

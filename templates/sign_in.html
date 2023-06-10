@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Argon</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/sign_in.css') }}">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper__container container">
+				<div class="container__enter-logo">
+					<h1 class="enter-logo">Argon</h1>
+				</div>
+				<div class="container__enter-form">
+					<form class="enter-form" method="POST" action="/">
+						<!-- TODO: action="/authorization or not..."-->
+						<div class="enter-form__field">
+							<input type="email" placeholder="E-mail*" id="userEmail" name="userEmail" required>
+						</div>
+						<div class="enter-form__field">
+							<input type="password" placeholder="Enter the password*" id="password" name="password" required>
+						</div>
+						<div class="enter-form__button">
+							<button type="submit">Sign ln</button>
+						</div>
+					</form>
+				</div>
+				<div class="container__sign-up-link">
+					<a href="./sign_up.html" class="sign-up-link">
+						Sign Up
+					</a>
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>
+ 
