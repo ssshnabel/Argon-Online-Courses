@@ -31,20 +31,20 @@ class User(db.Model):
 def show_sign_in():
 
     if request.method == 'POST':
-        testing_teacher = User(
-            fisrt_name = 'John',
-            last_name = 'Doe',
-            patronymic = None,
-            email ='john.doe@example.com',
-            password_hash ='hashed_password',
-            birthday ='1990-01-01',
-            city = 'New York',
-            theme = 'light',
-            notifications = 'off',
-            role = 'teacher'
-        )
-        db.session.add(testing_teacher)
-        db.session.commit()
+        # testing_teacher = User(
+        #     fisrt_name = 'John',
+        #     last_name = 'Doe',
+        #     patronymic = None,
+        #     email ='john.doe@example.com',
+        #     password_hash ='hashed_password',
+        #     birthday ='1990-01-01',
+        #     city = 'New York',
+        #     theme = 'light',
+        #     notifications = 'off',
+        #     role = 'teacher'
+        # )
+        # db.session.add(testing_teacher)
+        # db.session.commit()
 
         user_email = request.form['userEmail']
         password = request.form['password']
@@ -57,5 +57,5 @@ def show_sign_in():
     
     if request.method =="GET":
         return render_template('sign_in.html')
-# app.run(host="0.0.0.0", port="81")
+app.run(host="0.0.0.0", port="81")
  
